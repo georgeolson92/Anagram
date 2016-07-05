@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace Anagram.Objects
+namespace AnagramListChecker.Objects
 {
   public class Anagram
   {
@@ -11,8 +11,6 @@ namespace Anagram.Objects
       char[] inputArray = input.ToCharArray();
       Array.Sort(inputArray);
       string sortedInput = string.Join("", inputArray);
-
-
       foreach (string word in wordsToCheck)
       {
         char[] wordArray = word.ToCharArray();
